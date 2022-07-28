@@ -4,7 +4,257 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
+<link rel="stylesheet" href="content.css"/>
+<link rel="stylesheet" href="header.css" />
 <body>
+<header>
+    <nav>
+        <div class="img-nav">
+            <img src="img/logo.png" alt="" />
+        </div>
+        <div class="content-nav">
+            <ul>
+                <li><a href="#">Trang Chủ</a></li>
+                <li><a href="#">Sản Phẩm</a></li>
+                <li><a href="#">Liên Hệ</a></li>
+                <li><a href="#">Giới Thiệu</a></li>
+            </ul>
+            <form>
+                <input type="text" name="search" placeholder="Tìm kiếm sản phẩm..." />
+                <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </form>
+        </div>
+        <button id="cart">
+            <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+            Giỏ Hàng
+        </button>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Giỏ Hàng</h5>
+                    <span class="close">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div class="cart-row">
+                        <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                        <span class="cart-price cart-header cart-column">Giá</span>
+                        <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                    </div>
+                    <div class="cart-items">
 
+                    </div>
+                    <div class="cart-total">
+                        <strong class="cart-total-title">Tổng Cộng:</strong>
+                        <span class="cart-total-price">0VNĐ</span>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                    <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+</header>
+<section class="wrapper">
+    <div class="products">
+        <ul>
+            <li class="main-product">
+                <div class="img-product">
+                    <img class="img-prd"
+                         src="https://content2.kawasaki.com/ContentStorage/KMV/Products/4901/15cf5b29-e777-401d-8872-ed2c0e61220c.png?w=600"
+                         alt="">
+                </div>
+                <div class="content-product">
+                    <h3 class="content-product-h3">NINJA ZX-10R 2022</h3>
+                    <div class="content-product-deltals">
+                        <div class="price">
+                            <span class="money">769.000.000VNĐ</span>
+                        </div>
+                        <button type="button" class="btn btn-cart">Mua luôn</button>
+                    </div>
+                </div>
+            </li>
+            <li class="main-product">
+                <div class="img-product">
+                    <img class="img-prd"
+                         src="https://kawasakivietnam.vn/data/product/500/ninja6501-1602087127.jpg"
+                         alt="">
+                </div>
+                <div class="content-product">
+                    <h3 class="content-product-h3">NINJA 650 ABS</h3>
+                    <div class="content-product-deltals">
+                        <div class="price">
+                            <span class="money">210.000.000VNĐ</span>
+                        </div>
+                        <button type="button" class="btn btn-cart">Mua luôn</button>
+                    </div>
+                </div>
+            </li>
+            <li class="main-product">
+                <div class="img-product">
+                    <img class="img-prd"
+                         src="https://content2.kawasaki.com/ContentStorage/KMV/Products/4876/6de741b2-aae6-4976-8c6b-d9d7341e92c5.png?w=675"
+                         alt="">
+                </div>
+                <div class="content-product">
+                    <h3 class="content-product-h3">NINJA 400 ABS</h3>
+                    <div class="content-product-deltals">
+                        <div class="price">
+                            <span class="money">162.000.000VNĐ</span>
+                        </div>
+                        <button type="button" class="btn btn-cart">Mua luôn</button>
+                    </div>
+                </div>
+            </li>
+            <li class="main-product no-margin">
+                <div class="img-product">
+                    <img class="img-prd"
+                         src="https://content2.kawasaki.com/ContentStorage/KMV/Products/4878/1b6b439e-ed64-4226-9248-aa557de00692.png?w=675"
+                         alt="">
+                </div>
+                <div class="content-product">
+                    <h3 class="content-product-h3">NINJA H2 CARBON</h3>
+                    <div class="content-product-deltals">
+                        <div class="price">
+                            <span class="money">1.299.000.000VNĐ</span>
+                        </div>
+                        <button type="button" class="btn btn-cart">Mua luôn</button>
+                    </div>
+                </div>
+            </li>
+            <li class="main-product">
+                <div class="img-product">
+                    <img class="img-prd"
+                         src="https://hondamotor.vn/upload/hinhanh/thumb/honda-cbr650r-moi-san-xuat-tai-thai-land112r.jpg"
+                         alt="">
+                </div>
+                <div class="content-product">
+                    <h3 class="content-product-h3">CBR 650R</h3>
+                    <div class="content-product-deltals">
+                        <div class="price">
+                            <span class="money">264.000.000VNĐ</span>
+                        </div>
+                        <button type="button" class="btn btn-cart">Mua luônThêm Vào Giỏ</button>
+                    </div>
+                </div>
+            </li>
+            <li class="main-product">
+                <div class="img-product">
+                    <img class="img-prd"
+                         src="https://hondamotor.vn/upload/hinhanh/thumb/honda-cbr1000rr-r-fireblade-sp-chinh-hang-nhap-khau-tu-nhat892r.jpg"
+                         alt="">
+                </div>
+                <div class="content-product">
+                    <h3 class="content-product-h3">CBR1000RR-R Fireblade SP</h3>
+                    <div class="content-product-deltals">
+                        <div class="price">
+                            <span class="money">1.040.000.000VNĐ</span>
+                        </div>
+                        <button type="button" class="btn btn-cart">Mua luôn</button>
+                    </div>
+                </div>
+            </li>
+            <li class="main-product no-margin">
+                <div class="img-product">
+                    <img class="img-prd"
+                         src="https://hondamotor.vn/upload/hinhanh/thumb/cbr600rr972w.jpg"
+                         alt="">
+                </div>
+                <div class="content-product">
+                    <h3 class="content-product-h3">CBR 600RR</h3>
+                    <div class="content-product-deltals">
+                        <div class="price">
+                            <span class="money">520.000.000VNĐ</span>
+                        </div>
+                        <button type="button" class="btn btn-cart">Mua luôn</button>
+                    </div>
+                </div>
+            </li>
+            <li class="main-product no-margin">
+                <div class="img-product">
+                    <img class="img-prd"
+                         src="https://hondamotor.vn/upload/hinhanh/thumb/honda-cbr600rr-hrc-dua-motogp-hang-nhat-chinh-hang970c.jpg"
+                         alt="">
+                </div>
+                <div class="content-product">
+                    <h3 class="content-product-h3">CBR 600RR HRC</h3>
+                    <div class="content-product-deltals">
+                        <div class="price">
+                            <span class="money">720.000.000VNĐ</span>
+                        </div>
+                        <button type="button" class="btn btn-cart">Mua luôn</button>
+                    </div>
+                </div>
+            </li>
+            <li class="main-product no-margin">
+                <div class="img-product">
+                    <img class="img-prd"
+                         src="https://dd5394a0b8ca8e97ba29-abf76f3d91a2125517d6c7c409f095c7.ssl.cf1.rackcdn.com/content/common/Models/2022/75e59343-c9fb-431e-92f8-e266bf156876.png"
+                         alt="">
+                </div>
+                <div class="content-product">
+                    <h3 class="content-product-h3">YZF-R1M</h3>
+                    <div class="content-product-deltals">
+                        <div class="price">
+                            <span class="money">1.250.000.000VNĐ</span>
+                        </div>
+                        <button type="button" class="btn btn-cart">Mua luôn</button>
+                    </div>
+                </div>
+            </li>
+            <li class="main-product no-margin">
+                <div class="img-product">
+                    <img class="img-prd"
+                         src="https://dd5394a0b8ca8e97ba29-abf76f3d91a2125517d6c7c409f095c7.ssl.cf1.rackcdn.com/content/common/Models/2022/53e615d3-affc-4ee0-a20d-c260057d5d3d.png"
+                         alt="">
+                </div>
+                <div class="content-product">
+                    <h3 class="content-product-h3">YZF-R7</h3>
+                    <div class="content-product-deltals">
+                        <div class="price">
+                            <span class="money">270.000.000VNĐ</span>
+                        </div>
+                        <button type="button" class="btn btn-cart">Mua luôn</button>
+                    </div>
+                </div>
+            </li>
+            <li class="main-product no-margin">
+                <div class="img-product">
+                    <img class="img-prd"
+                         src="https://dd5394a0b8ca8e97ba29-abf76f3d91a2125517d6c7c409f095c7.ssl.cf1.rackcdn.com/content/common/Models/2020/337abf24-e64f-47f3-8e5b-74bcc37da04b.png"
+                         alt="">
+                </div>
+                <div class="content-product">
+                    <h3 class="content-product-h3">YZF-R6</h3>
+                    <div class="content-product-deltals">
+                        <div class="price">
+                            <span class="money">599.000.000VNĐ</span>
+                        </div>
+                        <button type="button" class="btn btn-cart">Mua luôn</button>
+                    </div>
+                </div>
+            </li>
+            <li class="main-product no-margin">
+                <div class="img-product">
+                    <img class="img-prd"
+                         src="https://dd5394a0b8ca8e97ba29-abf76f3d91a2125517d6c7c409f095c7.ssl.cf1.rackcdn.com/content/common/Models/2022/6d3d869d-dafd-4130-ada5-aa8ad8a41335.png"
+                         alt="">
+                </div>
+                <div class="content-product">
+                    <h3 class="content-product-h3">YZF-R1</h3>
+                    <div class="content-product-deltals">
+                        <div class="price">
+                            <span class="money">790.000.000VNĐ</span>
+                        </div>
+                        <button type="button" class="btn btn-cart">Mua luôn</button>
+                    </div>
+                </div>
+            </Li>
+        </ul>
+    </div>
+</section>
 </body>
 </html>
